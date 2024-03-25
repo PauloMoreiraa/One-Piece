@@ -1,4 +1,4 @@
-## ☠️ Landing Page - One Piece
+## Landing Page - ☠️ One Piece
 
 Esta é uma landing page inspirada no anime/mangá "One Piece", criada como projeto front-end para exibir informações sobre os personagens principais da série.
 
