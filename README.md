@@ -3,8 +3,8 @@
 Esta é uma landing page inspirada no anime/mangá "One Piece", criada como projeto front-end para exibir informações sobre os personagens principais da série.
 
 <p align="center">
-  <img src="https://github.com/PauloMoreiraa/One-Piece/assets/56117238/b0a69787-f923-4a19-9056-8f200af860ef" alt="Mobile 1" width="200" />
-  <img src="https://github.com/PauloMoreiraa/One-Piece/assets/56117238/77348e4c-8e72-4f66-b3d0-9ff81f4b358d" alt="PC 1" width="800" />
+  <img src="https://github.com/PauloMoreiraa/One-Piece/assets/56117238/b0a69787-f923-4a19-9056-8f200af860ef" alt="Mobile 1" width="160" />
+  <img src="https://github.com/PauloMoreiraa/One-Piece/assets/56117238/77348e4c-8e72-4f66-b3d0-9ff81f4b358d" alt="PC 1" width="500" />
 </p>
 
 
