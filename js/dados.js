@@ -6,7 +6,7 @@ const dados = {
         "apelido": "Chapéu de Palha",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Capitão",
-        "imagem": "../images/luffy.png"
+        "imagem": "./images/luffy.png"
       },
       {
         "nome": "Roronoa Zoro",
