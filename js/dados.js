@@ -13,14 +13,14 @@ const dados = {
         "apelido": "Pirata Caçador de Piratas",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Esgrimista",
-        "imagem": "../images/zoro.png"
+        "imagem": "./../images/zoro.png"
       },
       {
         "nome": "Nami",
         "apelido": "A Gata Ladra",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Navegadora",
-        "imagem": "../images/nami.png"
+        "imagem": "/../images/nami.png"
       },
       {
         "nome": "Usopp",
