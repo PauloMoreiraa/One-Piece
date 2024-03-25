@@ -1,0 +1,365 @@
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  font-family: "Coming Soon", cursive;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #C72332;
+}
+
+body::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #a11a26;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #FFCD01;
+}
+
+main {
+  background-image: url("../images/ffs.png");
+  background-size: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+main .caveira {
+  background-image: url("../images/pngegg.png");
+  background-size: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+}
+@media (max-width: 900px) {
+  main .caveira {
+    background-size: 45vh;
+  }
+}
+main .seta {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 45px;
+  width: 105vw;
+  margin-left: -10px;
+  font-size: 1.5rem;
+  color: #222222;
+  text-align: center;
+  background-color: #FFCD01;
+  transform: rotate(4deg);
+}
+main .seta img {
+  width: 19px;
+}
+main .seta span {
+  margin-bottom: 10px !important;
+}
+
+.container-basico {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 0 15%;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  height: 200vh;
+  background-color: #C72332;
+}
+
+@media (max-width: 1500px) {
+  .sobre {
+    flex-direction: column;
+  }
+}
+.sobre .parte-1 {
+  width: 60%;
+  height: 100vh;
+  background-color: transparent;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-1 {
+    width: 100%;
+    height: 50%;
+    align-items: center;
+  }
+}
+.sobre .parte-1 h1 {
+  font-size: 5rem;
+  color: #f6f6f6;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-1 h1 {
+    font-size: 2rem;
+  }
+}
+.sobre .parte-1 p {
+  color: #f6f6f6;
+  font-size: 1.4rem;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-1 p {
+    font-size: 0.8rem;
+    text-align: justify;
+  }
+}
+.sobre .parte-1 span {
+  padding-top: 30px;
+  width: 100%;
+  text-align: right;
+  color: #222222;
+  font-weight: bolder;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-1 span {
+    text-align: center;
+  }
+}
+.sobre .parte-1 .plataforma {
+  width: 100%;
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-1 .plataforma {
+    justify-content: center;
+  }
+}
+.sobre .parte-1 .plataforma .icon {
+  width: 35px;
+  height: 35px;
+  background-size: 35px;
+  border-radius: 12px;
+}
+.sobre .parte-1 .plataforma .net {
+  background-image: url("../images/netflix.png");
+}
+.sobre .parte-1 .plataforma .pri {
+  background-image: url("../images/prime.png");
+}
+.sobre .parte-2 {
+  width: 50%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (max-width: 1500px) {
+  .sobre .parte-2 {
+    width: 100%;
+    height: 40%;
+    justify-content: flex-start;
+  }
+}
+.sobre .parte-2 img {
+  width: 100%;
+}
+
+.efeito {
+  padding: 0 !important;
+  background-image: url("../images/mar2.png");
+  width: 100%;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+}
+.efeito span {
+  z-index: 2;
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 30px;
+  margin-top: 50px;
+  color: #f6f6f6;
+  font-size: 1.4rem;
+}
+.efeito .mar2 {
+  background-image: url("../images/mar2.png");
+  width: 100%;
+  height: 100vh;
+  background-position: bottom;
+  background-size: cover;
+  position: absolute;
+}
+.efeito .mar {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/mar.png");
+  background-size: cover;
+  position: absolute;
+}
+.efeito .barco {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/barco.png");
+  background-size: 80%;
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.personagens {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  padding: 0 !important;
+}
+.personagens .cards {
+  width: 100%;
+  height: auto;
+  cursor: grab;
+}
+.personagens .card {
+  background-image: url("../images/pergaminho.png");
+  background-position: center;
+  background-size: 530px;
+  background-repeat: no-repeat;
+  width: 250px;
+  height: 700px;
+  display: flex;
+  padding-top: 40px;
+}
+@media (max-width: 1500px) {
+  .personagens .card {
+    width: 250px;
+    height: 500px;
+    background-size: 330px;
+  }
+}
+.personagens .card:focus {
+  outline: none;
+}
+.personagens .card div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 5%;
+}
+.personagens .card div h2 {
+  font-size: 2.4rem;
+}
+@media (max-width: 1500px) {
+  .personagens .card div h2 {
+    font-size: 1.4rem;
+  }
+}
+.personagens .card div span {
+  font-size: 1.3rem;
+}
+@media (max-width: 1500px) {
+  .personagens .card div span {
+    font-size: 0.9rem;
+  }
+}
+.personagens .card img {
+  width: 400px;
+  text-align: center;
+  margin: 0 auto;
+}
+@media (max-width: 1500px) {
+  .personagens .card img {
+    width: 250px;
+  }
+}
+
+.topo {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: #FFCD01;
+  z-index: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 0;
+  right: 0;
+  margin: 10px;
+  border-radius: 12px;
+  box-shadow: 5px 5px 14px rgba(0, 0, 0, 0.2862745098);
+}
+@media (max-width: 900px) {
+  .topo {
+    display: none;
+  }
+}
+.topo img {
+  width: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 25vh;
+  background-image: url("../images/mar-fim.png");
+  background-size: cover;
+  position: relative;
+  margin-top: 100vh;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+  color: #222222;
+}
+footer .creditos {
+  width: 100%;
+  height: 100%;
+  background-color: #4F6ADF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-weight: bolder;
+  gap: 10px;
+}
+footer .creditos #dev {
+  padding-top: 40px;
+}
+footer .creditos .redes {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+footer .creditos .redes .rede {
+  width: 40px;
+  height: 40px;
+  background-size: 40px;
+}
+footer .creditos .redes .git {
+  background-image: url("../images/github (2).png");
+}
+footer .creditos .redes .insta {
+  background-image: url("../images/instagram (4).png");
+}
+footer .creditos .redes .linkedin {
+  background-image: url("../images/linkedin (2).png");
+}/*# sourceMappingURL=style.css.map */

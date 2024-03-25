@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Coming+Soon&display=swap');
+
+//variáveis 
+$vermelho: #C72332;
+$vermelho-escuro: #a11a26;
+$amarelo: #FFCD01;
+$azul: #4F6ADF;
+$preto: #222222;
+$branco: #f6f6f6;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    width: 100%;
+    font-family: "Coming Soon", cursive;
+    font-weight: 400;
+    font-style: normal;
+    background-color: $vermelho;
+    
+}
+
+//barra de scroll
+body::-webkit-scrollbar {
+    width: 5px;               
+}
+
+body::-webkit-scrollbar-track {
+    background: $vermelho-escuro; 
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: $amarelo;         
+}
+
+
+//
+main{
+    background-image: url('../images/ffs.png');
+    background-size: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .caveira{
+        background-image: url('../images/pngegg.png');
+        background-size: 100vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 100vh;
+
+        @media(max-width: 900px){
+            background-size: 45vh;
+        }
+    }
+    .seta{
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 45px;
+        width: 105vw;
+        margin-left: -10px;
+        font-size: 1.5rem;
+        color: $preto;
+        text-align: center;
+        background-color: $amarelo;
+        transform: rotate(4deg);
+
+        img{
+            width: 19px;
+        }
+        span{
+            margin-bottom: 10px!important;
+        }
+    }
+}
+
+//predefinições
+.container-basico{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    padding: 0 15%;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 100%;
+    height: 200vh;
+    background-color: $vermelho;
+}
+
+//começo-pós-banner
+.sobre{
+
+    @media(max-width: 1500px){
+        flex-direction: column;
+    }
+
+    .parte-1{
+        width: 60%;
+        height: 100vh;
+        background-color: transparent;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+        @media(max-width: 1500px){
+            width: 100%;
+            height: 50%;
+            align-items: center;
+        }
+
+        h1{
+            font-size: 5rem;
+            color: $branco;
+
+            @media(max-width: 1500px){
+                font-size: 2rem;
+            }
+        }
+        p{
+            color: $branco;
+            font-size: 1.4rem;
+
+            @media(max-width: 1500px){
+                font-size: .8rem;
+                text-align: justify;
+            }
+        }
+
+        span{
+            padding-top: 30px;
+            width: 100%;
+            text-align: right;
+            color: $preto;
+            font-weight: bolder;
+
+            @media(max-width: 1500px){
+                text-align: center;
+            }
+        }
+
+        .plataforma{
+            width: 100%;
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+
+            @media(max-width: 1500px){
+                justify-content: center;
+            }
+
+            .icon{
+                width: 35px;
+                height: 35px;
+                background-size: 35px;
+                border-radius: 12px;
+            }
+
+            .net{
+                background-image: url('../images/netflix.png');
+            }
+            .pri{
+                background-image: url('../images/prime.png');
+            }
+        }
+    }
+
+    .parte-2{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        @media(max-width: 1500px){
+            width: 100%;
+            height: 40%;
+            justify-content: flex-start;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}
+
+.efeito{
+    padding: 0!important;
+    background-image: url('../images/mar2.png');
+    width: 100%;
+    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    position: absolute;
+
+    span{
+        z-index: 2;
+        font-size: 20px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: 30px;
+        margin-top: 50px;
+        color: $branco;
+        font-size: 1.4rem;
+    }
+
+    .mar2{
+        background-image: url('../images/mar2.png');
+        width: 100%;
+        height: 100vh;
+        background-position: bottom;
+        background-size: cover;
+        position: absolute;
+    }
+    .mar{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/mar.png');
+        background-size: cover;
+        position: absolute;
+    }
+
+    .barco{
+        width: 100%;
+        height: 100vh;
+        background-image: url('../images/barco.png');
+        background-size: 80%;
+        position: absolute;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+.personagens{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    padding: 0!important;
+
+    .cards{
+        width: 100%;
+        height: auto; 
+        cursor: grab;
+    }
+
+    .card{
+        background-image: url('../images/pergaminho.png');
+        background-position: center;
+        background-size: 530px;
+        background-repeat: no-repeat;
+        width: 250px;
+        height: 700px;
+        display: flex;
+        padding-top: 40px;
+
+        @media(max-width: 1500px){
+            width: 250px;
+            height: 500px;
+            background-size: 330px;
+        }
+
+        &:focus{
+            outline: none;
+        }
+
+
+        div{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding-top: 5%;
+
+            
+
+            h2{
+                font-size: 2.4rem;
+
+                @media(max-width: 1500px){
+                    font-size: 1.4rem;
+                }
+            }
+
+            span{
+                font-size: 1.3rem;
+
+                @media(max-width: 1500px){
+                    font-size: .9rem;
+                }
+            }
+            
+        }
+
+        img{
+            width: 400px;
+            text-align: center;
+            margin: 0 auto;
+
+            @media(max-width: 1500px){
+                width: 250px;
+            }
+        }
+    }
+}
+
+.topo{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #FFCD01;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    border-radius: 12px;
+    box-shadow: 5px 5px 14px #00000049;
+
+    @media(max-width: 900px){
+        display: none;
+    }
+
+    img{
+        width: 30px;
+    }
+}
+
+footer{
+    width: 100%;
+    height: 25vh;
+    background-image: url('../images/mar-fim.png');
+    background-size: cover;
+    position: relative;
+    margin-top: 100vh;
+    justify-content: center;
+    align-items: flex-end;
+    display: flex;
+    color: $preto;
+
+    .creditos{
+        width: 100%;
+        height: 100%;
+        background-color: $azul;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        font-weight: bolder;
+        gap: 10px;
+
+        #dev{
+            padding-top: 40px;
+        }
+
+        .redes{
+            display: flex;
+            width: 100%;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+
+            .rede{
+                width: 40px;
+                height: 40px;
+                background-size: 40px;
+            }
+            .git{
+                background-image: url('../images/github\ \(2\).png');
+            }
+            .insta{
+                background-image: url('../images/instagram\ \(4\).png');
+            }
+            .linkedin{
+                background-image: url('../images/linkedin\ \(2\).png');
+            }
+        }
+    }
+}
