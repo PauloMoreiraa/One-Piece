@@ -13,35 +13,35 @@ const dados = {
         "apelido": "Pirata Caçador de Piratas",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Esgrimista",
-        "imagem": "./../images/zoro.png"
+        "imagem": "./images/zoro.png"
       },
       {
         "nome": "Nami",
         "apelido": "A Gata Ladra",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Navegadora",
-        "imagem": "/../images/nami.png"
+        "imagem": "./images/nami.png"
       },
       {
         "nome": "Usopp",
         "apelido": "Sogeking",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Atirador",
-        "imagem": "../images/Usopp.png"
+        "imagem": "./images/Usopp.png"
       },
       {
         "nome": "Sanji",
         "apelido": "Black Leg",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Cozinheiro",
-        "imagem": "../images/sanji.png"
+        "imagem": "./images/sanji.png"
       },
       {
         "nome": "Nico Robin",
         "apelido": "Flor Demoníaca",
         "tripulação": "Piratas do Chapéu de Palha",
         "cargo": "Arqueóloga",
-        "imagem": "../images/nico.png"
+        "imagem": "./images/nico.png"
       }
     ]
 };
